@@ -35,24 +35,23 @@ public class CalculadoraController {
 	public double calculando(@RequestBody @RequestParam double n1, @RequestParam double n2,
 			@RequestParam OperadorCalc operador) {
 		System.out.println(n1 + n2 + "operador");
-		
+
 		Calculadora calc = new Calculadora();
-		
+
 		double resultado;
-	
+
 		calc.setN1(n1);
 		calc.setN2(n2);
 		calc.setOperador(operador);
-			
-	
+
 		if (operador == OperadorCalc.SOMA) {
-			
+
 			resultado = n1 + n2;
 			calc.setResultado(resultado);
 			calculadoraRepository.save(calc);
 			return n1 + n2;
 		}
-	
+
 		if (operador == OperadorCalc.SUBTRACAO) {
 			resultado = n1 - n2;
 			calc.setResultado(resultado);
@@ -72,11 +71,11 @@ public class CalculadoraController {
 			calc.setResultado(resultado);
 			calculadoraRepository.save(calc);
 			return n1 * n2;
-			
+
 		}
-		
+
 		return 0;
-		
+
 	}
-	
+
 }
