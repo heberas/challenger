@@ -7,6 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import br.com.eskivel.calculadora.enumm.OperadorCalc;
+
 @Entity
 public class Calculadora {
 
