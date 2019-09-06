@@ -20,7 +20,7 @@ public class CalculadoraController {
 	public double calculando(@RequestBody Calculadora calculadora) {
 
 		return calculadoraService.CalcServ(calculadora);
-
+   
 	}
 
 }
