@@ -29,21 +29,20 @@ public class CalculadoraService {
 		if (calculadora.getOperador() == OperadorCalc.SUBTRACAO) {
 			resultado = calculadora.getN1() - calculadora.getN2();
 			
-
 		}
 		if (calculadora.getOperador() == OperadorCalc.DIVISAO) {
 			resultado = calculadora.getN1() / calculadora.getN2();
 		
-
 		}
 		if (calculadora.getOperador() == OperadorCalc.MULTIPLICACAO) {
 			resultado = calculadora.getN1() * calculadora.getN2();
 			
-
 		}
+		
 		calculadora.setResultado(resultado);
 		calculadoraRepository.save(calculadora);
 		return resultado;
+		//
 
 	}
 }
