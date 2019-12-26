@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.calculadora</groupId>
-	<artifactId>calculadora</artifactId>
+	<artifactId>calc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>forum</name>
+	<name>calc</name>
 	<description>Calculadora simples</description>
 
 	<properties>
