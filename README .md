@@ -5,7 +5,7 @@ Projeto disponível em: https://github.com/heberas/challenger
 
 ### Instruções
 - Fazer um git clone https://github.com/heberas/challenger em seu repositório local
-- Descompactar o arquivo .rar e importar o projeto na IDE.
+- Importar o projeto na IDE.
 
 ### Regra da aplicação
 
