@@ -6,6 +6,7 @@ Projeto disponível em: https://github.com/heberas/challenger
 ### Instruções
 - Fazer um git clone https://github.com/heberas/challenger em seu repositório local
 - Importar o projeto na IDE.
+- Token de acesso ->  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
 
 ### Regra da aplicação
 
