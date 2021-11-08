@@ -15,10 +15,6 @@ public class ValidatePasswordService {
 
 		Pattern pattern = Pattern.compile(rule);
 		
-		if (pattern.matcher(password.getPassword().replace(" ", "")).matches())
-			return true;
-
-		return false;
-
+		return pattern.matcher(password.getPassword().replace(" ", "")).matches();
 	}
 }
