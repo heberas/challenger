@@ -24,7 +24,7 @@ public class ChallengerController {
 	public ValidatePasswordService validate;
 
 	@PostMapping
-	public boolean validatePassword(@RequestBody(required = true) Password password,
+	public boolean validatePassword(@RequestBody Password password,
 			HttpServletRequest request) {
 		logger.info("m=validatePassword", password, request);
 
