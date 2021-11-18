@@ -36,7 +36,7 @@ curl --location --request POST 'http://localhost:8080/validate/password' \
 
 spring-boot-devtools
 
-4. Implementado na Camada de Controller os seguintes recursos:
+4. Implementado na Camada de Controller o recurso:
 
 - Obtenção de log -> logger.info("m=validatePassword", password, request);
 
