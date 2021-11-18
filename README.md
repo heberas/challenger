@@ -38,7 +38,6 @@ spring-boot-devtools
 
 4. Implementado na Camada de Controller os seguintes recursos:
 
-- Obrigatoriedade no request o envio do parâmetro -> (required = true)
 - Obtenção de log -> logger.info("m=validatePassword", password, request);
 - Objeto para leitura de dados do header, caso seja necessário futuramente -> HttpServletRequest request
 
