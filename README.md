@@ -19,7 +19,7 @@ Validador de senhas com os requisitos:
 - Espaços em branco não devem ser considerados como caracteres válidos.
 
 1. cuRL:
-curl --location --request POST 'http://localhost:8080/validate/password' \
+curl --location --request POST 'http://localhost:8083/validate/password' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "password": "9bp Lmf@01"
