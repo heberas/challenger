@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class ValidatePasswordServiceMocks {
 
-    public Boolean getValid(Password password) {
+    public boolean getValid(Password password) {
         String rule = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])^(?!.*(.).*\\1).*(?=.*[@#$%^&+=])(?=\\S+$).{9,}$";
         Pattern pattern = Pattern.compile(rule);
         return pattern.matcher(password.getPassword().replace(" ", "")).matches();
@@ -20,7 +20,7 @@ public class ValidatePasswordServiceMocks {
         return password;
     }
 
-    public Boolean getInvalid(Password password) {
+    public boolean getInvalid(Password password) {
         String rule = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])^(?!.*(.).*\\1).*(?=.*[@#$%^&+=])(?=\\S+$).{9,}$";
         Pattern pattern = Pattern.compile(rule);
         return pattern.matcher(password.getPassword().replace(" ", "")).matches();
